@@ -1,0 +1,8 @@
+---
+
+- name: Crawl through nodes
+  hosts: nodes
+  remote_user: root
+
+  roles:
+    - crawl

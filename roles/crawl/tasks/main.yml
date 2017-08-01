@@ -1,0 +1,11 @@
+---
+# tasks file for crawl
+
+- name: crawl through systems for .crt files
+  find:
+    paths: "/"
+    patterns: "*.crt"
+    recurse: yes
+  register: findresult
+
+- debug: msg={{ findresult }}
