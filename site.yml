@@ -3,6 +3,9 @@
 - name: Crawl through nodes
   hosts: nodes
   remote_user: root
+# You can change remote_user to any non-root user with sudo
+# privileges and add the become: true option as show below
+# become: true
 
   roles:
     - crawl
